@@ -17,6 +17,13 @@ namespace TestMethods
         }
 
         [Benchmark]
+        public void TestLengthElement1()
+        {
+            string[] array3 = Methods.CopiArray(array);
+            string[] resalt1 = Methods.LengthElement1(array3);
+        }
+
+        [Benchmark]
         public void TestSortQuick()
         {
             string[] array2 = Methods.CopiArray(array);

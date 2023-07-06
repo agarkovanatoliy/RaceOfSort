@@ -87,6 +87,20 @@
             if (left < j) SortQuick(collection, left, j);
             return collection;
         }
+
+        public static string[] LengthElement1(string[] el)
+        {
+            string[] newarray = new string[el.Length];
+
+            for (int i = 0; i < el.Length; i++)
+            {
+                if (el[i].Length <= 3)
+                {
+                    newarray[i] = el[i];
+                }
+            }
+            return newarray;
+        }
         static void Main() { }
     }
 }
